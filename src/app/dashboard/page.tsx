@@ -533,7 +533,7 @@ const Dashboard: React.FC = () => {
         </div>
         <ul>
           <li
-            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'dashboard' ? 'bg-teal-600' : ''}`}
+            className={`p-4 cursor-pointer hover:bg-green-700 ${activeTab === 'dashboard' ? 'bg-green-600' : ''  }`}
             onClick={() => setActiveTab('dashboard')}
           >
             Dashboard
