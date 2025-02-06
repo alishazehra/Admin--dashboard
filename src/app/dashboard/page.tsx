@@ -525,11 +525,13 @@ const Dashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('dashboard');
 
   return (
+    
     <div className="flex flex-col sm:flex-row md:flex-row h-screen bg-gray-100">
       {/* Sidebar */}
       <div className="w-full sm:w-34 md:w-64 bg-gray-800 text-white">
+        <div className='a '></div>
         <div className="p-5">
-          <h2 className="text-2xl font-semibold text-center">Admin Panel</h2>
+          <h2 className="text-2xl font-semibold text-center ">Admin Panel</h2>
         </div>
         <ul>
           <li
@@ -563,13 +565,14 @@ const Dashboard: React.FC = () => {
             Sales
           </li>
         </ul>
+       
       </div>
-
+      <div className='a'></div>
       {/* Content Area */}
       <div className="flex-1 p-6 overflow-y-auto">
         {activeTab === 'dashboard' && (
           <div>
-            <h1 className="text-3xl font-semibold mb-4">Dashboard Overview</h1>
+            <h1 className="text-3xl font-semibold mb-4 underline decoration-black-500" >Dashboard Overview</h1>
             <p className="text-lg text-gray-600 mb-4">
               Welcome to  Admin Panel! Below is a quick overview of key stats.
             </p>
@@ -700,6 +703,7 @@ const Dashboard: React.FC = () => {
                 Log out
               </h1>
             </Link>
+           
           </div>
         )}
       </div>
