@@ -101,14 +101,14 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
+    <div className="min-h-screen bg-teal-500 flex items-center justify-center">
+      <div className="bg-teal-300 p-8 rounded-lg shadow-lg max-w-sm w-full">
         <h2 className="text-2xl font-semibold text-center mb-6">Login to Dashboard</h2>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
 
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 ">
               Email
             </label>
             <input
@@ -116,7 +116,7 @@ const LoginPage = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full p-2 mt-1 border border-black rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
               required
             />
           </div>
@@ -130,18 +130,18 @@ const LoginPage = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full p-2 mt-1 border border-black rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
               required
             />
           </div>
 
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-800"
           >
             Log In
           </button>
-     <div className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg bg-green-600 text-center">     <Link href="/cart">Back to website</Link> </div>
+     <div className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg bg-green-600 text-center ">     <Link href="/cart">Back to website</Link> </div>
         </form>
       </div>
     </div>
